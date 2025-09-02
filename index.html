@@ -1,35 +1,112 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Md Minhaj</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Md Minhaj - Personal Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #ffcc00;
+    }
+    video {
+      margin-top: 20px;
+      border-radius: 10px;
+      max-width: 90%;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navbar -->
+  <!-- Header -->
   <header>
-    <nav>
-      <h2 class="logo">Minhaj</h2>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-      </ul>
-    </nav>
+    <h1>Md Minhaj</h1>
+    <p>আমার ব্যক্তিগত ওয়েবসাইট 🚀</p>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Hello, I'm <span>Md Minhaj 👋</span></h1>
-    <p>আমি একজন শিক্ষার্থী 🚀</p>
-    <a href="about.html" class="btn">Discover More</a>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <!-- Photo Section -->
-    <div class="home-photo">
-      <img src="Picsart_25-08-06_18-37-36-650.jpg" alt="My Photo">
-    </div>
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome to My Website</h2>
+    <p>এখানে আমার ছবি এবং ভিডিও দেখতে পারবেন 👇</p>
+    <img src="mypic.jpg" alt="My Photo">
+    <video controls>
+      <source src="myvideo.mp4" type="video/mp4">
+      আপনার ব্রাউজার ভিডিও সাপোর্ট করে না।
+    </video>
   </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>আমি Md Minhaj, একজন শিক্ষার্থী ও ওয়েবসাইট শেখার পথে আছি।</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <ul style="list-style:none; padding:0;">
+      <li>📌 Project 1</li>
+      <li>📌 Project 2</li>
+      <li>📌 Project 3</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:minhaj@example.com">minhaj@example.com</a></p>
+    <p>Facebook: <a href="https://facebook.com/" target="_blank">আমার Facebook</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Md Minhaj. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
