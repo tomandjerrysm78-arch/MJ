@@ -3,64 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MJ Website</title>
-  <style>
-    body {
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      color: white;
-    }
-    header {
-      background: rgba(0, 0, 0, 0.3);
-      padding: 20px;
-    }
-    nav a {
-      color: yellow;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 40px;
-    }
-    h1 {
-      font-size: 2.5em;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: yellow;
-      color: black;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-  </style>
+  <title>Md Minhaj | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <!-- Navigation Bar -->
   <header>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <h2 class="logo">Minhaj</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section>
-    <h1>Welcome to My Website 🎉</h1>
-    <img src="Picsart_25-08-06_18-37-36-650.jpg" alt="MJ Photo" 
-         style="width:200px;border-radius:50%;border:4px solid white;">
-    <h2>Md Minhaj</h2>
-    <p>আমার নিজের ছোট্ট জগতে আপনাকে স্বাগতম 🥰 🚀</p>
-    <a href="about.html" class="btn">Learn More</a>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Md Minhaj</span> 👋</h1>
+      <p>আমি একজন শিক্ষার্থী 🚀</p>
+      <a href="#about" class="btn">Discover More</a>
+    </div>
   </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      আমি নতুন কিছু শিখতে ভালোবাসি🌟
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-box">
+      <div class="skill">🌐 HTML</div>
+      <div class="skill">🎨 CSS</div>
+      <div class="skill">⚡ JavaScript</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>📌 Portfolio Website</h3>
+      <p>My personal portfolio using HTML, CSS & animations</p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>📌 Coming Soon...</h3>
+      <p>More projects will be added soon 🚀</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>📧 Email: yourmail@example.com</p>
+    <p>🌐 GitHub: <a href="https://github.com/rysm78-arch" target="_blank">rysm78-arch</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Md Minhaj | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
